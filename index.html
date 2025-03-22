@@ -1,35 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>my first styled website</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <style type="text/css">
+<html lang="en">
+<head>
+  <style>
 
- </style>
-  </head>
-  <body>
-    <!-- 网站导航菜单 -->
-    <ul class="navbar">
-      <li><a href="index.html">Home page</a></li>
-      <li><a href="musings.html">Musings</a></li>
-      <li><a href="town.html">My town</a></li>
-      <li><a href="links.html">Links</a></li>
-    </ul>
-          <!-- Main content -->
-      <h1>My first styled page</h1>
+        audio { display: none; }
+    </style>
 
-      <p>Welcome to my styled page!
+</head>
+<body>
 
-      <p>It lacks images, but at least it has style.
-      And it has links, even if they don't go
-      anywhere&hellip;
+    <audio id="bgMusic" autoplay loop muted>
+        <source src="DongHua.mp3" type="audio/mpeg">
+    </audio>
 
-      <p>There should be more here, but I don't know
-      what yet.
+    <script>
 
-      <!-- Sign and date the page, it's only polite! -->
-      <address>Made 5 April 2004<br>
-        by myself.</address>
-  </body>
+        document.addEventListener('click', function initAudio() {
+            const audio = document.getElementById('bgMusic');
+            audio.muted = false;
+            audio.play();
+        }, { once: true });
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#蝾螈加工坊#</title>
+    <link rel="stylesheet" href="蝾螈style.css">
+<style >
+h1 {
+  text-align:  center;
+  color:white;
+  font-size:50px;
+   font-family:'方正静蕾简体';
+}
+</style>
+
+
+</head>
+
+<body>
+
+  <script>
+  alert('After clicking OK, click anywhere to play the music!'); 
+</script>
+    <section class="showcase">
+        <div class="video-container">
+            <video src="DongHua.mp4" autoplay muted loop></video>
+
+
+        </div>
+        <div class="content">
+
+          <h1>Hello, let's test what kind of salamander you'll get！</h1>
+
+            <a href = "https://baike.baidu.com/item/%E5%A2%A8%E8%A5%BF%E5%93%A5%E9%92%9D%E5%8F%A3%E8%9E%88/6808275"
+            target="_blank"
+            style="text-decoration:none">Want to know the prototype of this salamander...?</a>
+            <br>
+            <a href="file:///D:/%E4%BD%9C%E4%B8%9A/2025%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/CreativeInteractionDesign_Zhou_2025/Test.html" class="botton">^START^</a>
+        </div>
+    </section>
+
+</body>
 </html>
