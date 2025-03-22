@@ -1,0 +1,76 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: #888df4;
+    text-decoration: none;
+}
+
+.showcase {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 0deg , rgba(0, 0, 0, 0.6), transparent);
+}
+
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.botton {
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 20px ;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    // zifu jianju;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-family: '方正静蕾简体';
+}
+
+.btn:hover {
+    transform: scale(0.8);
+    backdrop-filter: blur(5px);
+}

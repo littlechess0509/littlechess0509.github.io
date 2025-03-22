@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+        audio { display: none; }
+    </style>
+
+</head>
+<body>
+
+    <audio id="bgMusic" autoplay loop muted>
+        <source src="DongHua.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+
+        document.addEventListener('click', function initAudio() {
+            const audio = document.getElementById('bgMusic');
+            audio.muted = false;
+            audio.play();
+        }, { once: true });
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#蝾螈加工坊#</title>
+    <link rel="stylesheet" href="蝾螈style.css">
+<style >
+h1 {
+  text-align:  center;
+  color:white;
+  font-size:50px;
+   font-family:'方正静蕾简体';
+}
+</style>
+
+
+</head>
+
+<body>
+
+  <script>
+  alert('After clicking OK, click anywhere to play the music!'); 
+</script>
+    <section class="showcase">
+        <div class="video-container">
+            <video src="DongHua.mp4" autoplay muted loop></video>
+
+
+        </div>
+        <div class="content">
+
+          <h1>Hello, let's test what kind of salamander you'll get！</h1>
+
+            <a href = "https://baike.baidu.com/item/%E5%A2%A8%E8%A5%BF%E5%93%A5%E9%92%9D%E5%8F%A3%E8%9E%88/6808275"
+            target="_blank"
+            style="text-decoration:none">Want to know the prototype of this salamander...?</a>
+            <br>
+            <a href="file:///D:/%E4%BD%9C%E4%B8%9A/2025%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/CreativeInteractionDesign_Zhou_2025/Test.html" class="botton">^START^</a>
+        </div>
+    </section>
+
+</body>
+</html>
