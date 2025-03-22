@@ -34,20 +34,20 @@
         }
 
         .color-option1 {
-      background-image: url('Q/1.png');
+      background-image: url('1.png');
   }
         .color-option2 {
-          background-image: url('Q/2.png');
+          background-image: url('2.png');
 }
         .personality-option1 {
-    background-image: url('Q/3.png');
+    background-image: url('3.png');
    }
         .personality-option2 {
-       background-image: url('Q/4.png');
+       background-image: url('4.png');
       }
 
-        .clothing-option1 {  background-image: url('Q/5.png');}
-        .clothing-option2 {  background-image: url('Q/6.png');}
+        .clothing-option1 {  background-image: url('5.png');}
+        .clothing-option2 {  background-image: url('6.png');}
         .option-block:hover {
             transform: scale(1.02);
 
@@ -154,7 +154,7 @@
 
 
                 const img = new Image();
-                img.src = `images/${selections.color}_${selections.personality}_${selections.clothing}.png`;
+                img.src = `${selections.color}_${selections.personality}_${selections.clothing}.png`;
                 img.style.cssText = `
                     position: fixed;
                     top: 50%;
